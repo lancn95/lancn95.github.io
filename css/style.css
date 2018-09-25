@@ -102,19 +102,19 @@ transform: translateY(-50%);
 .banner{}
 .banner .anh1{
 	background: url('../img/banner_slider05.jpg');
-	height: 100vh; /* anh full man hinh */
+	height: 70vh; /* anh full man hinh */
 	background-size: cover; /* de cho luc zoom ra,vao deu full */
 	position: relative;
 }	
 .banner .anh2{
 	background: url('../img/banner_slider06.jpg');
-	height: 100vh;
+	height: 70vh;
 	background-size: cover;
 	position: relative;
 }
 .banner .anh3{
 	background: url('../img/banner_slider07.jpg');
-	height: 100vh;
+	height: 75vh;
 	background-size: cover;
 	position: relative;
 }
