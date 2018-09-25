@@ -1,0 +1,41 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background: url('../img/noi.jpg') fixed no-repeat center center /cover; 
+}
+header{}
+main{
+	height: 500px;
+}
+
+main form{
+	margin: 50px 0;
+}
+main form h3{
+	color: #fff;
+}
+main form label{
+	margin-top: 20px;
+	font-family: arial;
+	color: #fff;
+}
+main form input{
+	border: 1px solid grey;
+	border-radius: 25px;
+	width: 350px
+}
+main form button{
+	border: 1px solid black;
+    border-radius: 25px;
+    width: 100px;
+    background-color: #fff;
+    margin: 25px 5px;
+
+}
+main form button:hover{
+	background-color: black;
+	color: #fff;
+}
+footer{}
