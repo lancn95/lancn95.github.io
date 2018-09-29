@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Register</title>
+	<title>GioHang</title>
 	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/styledk.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/Giohang.css">
+	
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 	<link rel="stylesheet" href="css/animate.css">
@@ -62,7 +63,9 @@
 				</div>
 			</div>
 		</div>
+		<!-- header-mid-area end -->
 	</header>
+	<!-- main-menu-start -->
 		<nav class="navbar navbar-inverse" role="navigation">
 			<div class="container">
 			
@@ -102,40 +105,59 @@
 				</div>
 			</div>
 		</nav>
+		<main>
+			<div class="container">
+				<div class="bread-crum">
+					<a href="index.html">Home <i class="fas fa-chevron-right"></i></a>
+					<span>Shopping Cart</span>
+				</div>
+			</div>
+			<div class="khoi-table">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-7">
+							<div class="table-shopping">
+							
+									<div class="table-head">
+											<span class="collumn1">Product</span>
+											<span class="collumn2"></span>
+											<span class="collumn3">Price</span>
+											<span class="collumn4">Quanity</span>
+											<span class="collumn5">Total</span>
+									</div>
+									<div class="table-mid">
+										<span class="collumn1">
+											<div class="item">
+												<img src="img/item-cart-04.jpg" alt="">
+											</div>
+										</span>
+										<span class="collumn2">Light Coats</span>
+										<span class="collumn3 lala">$75</span>
+										<span class="collumn4 haha">
+											<div class="wrap-num-product">
+												<div class="btn-num-down">
+													<i class="fas fa-minus"></i>
+												</div>
+												<input type="number" name="num-of-product" value="1">
+												<div class="btn-num-up">
+													<i class="fas fa-plus"></i>
+												</div>
+											</div>
+										</span>
+										<span class="collumn5">$75</span>
+									</div>
+								
+							</div>
+						</div>
+						<div class="col-md-5"></div>
 
-<!-- .......FORM Sign up......... -->
-<main>
-	<div class="container">
-		<form action="index.html">
-			<h3>Register</h3>
-			<label for="">Username</label>
-			<p>
-				<input type="text" id="username" class="username" placeholder=" Username" >
-			</p>
-			
-				<label for="">Password</label>
-			<p>	
-				<input type="password" class="password" id="password" placeholder=" Password" required="">
-			</p>
-			
-				<label for="">Email</label>
-			<p>
-				<input type="text" id="email" class="email" placeholder=" Email" required="">
-			</p>
-			
-				<label for="">Phone number</label>
-			<p>	
-				<input type="number" id="phone" class="phone" placeholder=" 037+" required="">
-			</p>
-			<p>
-				<button type="submit" id="btn">Register</button>
-				<button type="reset">Reset</button>
-			</p>
-		</form>
-	</div>
-</main>
-<footer>
-	<div class="footer-top-area">
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer-area">
+		<div class="footer-top-area">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-3">
@@ -240,16 +262,12 @@
 					</div>
 				</div>
 			</div>
-		</div>
-	
-</footer>
+		</div>				
+	</footer>
 
-
-
-	
-	<script src="js/javascript.js" type="text/javascript" charset="utf-8" async defer></script>
 	<script type="text/javascript" src="js/all.min.js"></script>
 	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="js/howactive.js"></script>
 	<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 </body>
 </html>

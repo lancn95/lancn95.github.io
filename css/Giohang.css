@@ -1,0 +1,81 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+header{}
+main{}
+main .khoi-table{}
+main .table-mid{
+	display: flex;
+}
+main .wrap-num-product{
+	display: flex;
+}
+main .wrap-num-product input{
+	width: 50px;
+	height: 40px;
+	text-align: center;
+
+}
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+main .table-shopping{
+	border: 1px solid #e6e6e6;
+	padding: 20px 20px;
+}
+main .table-head{
+	
+	border-bottom: 1px solid #e6e6e6;
+}
+.collumn1{
+font-size: 13px;
+color: #555;
+padding-right: 15px;
+text-transform: uppercase;
+}
+.collumn2{
+	font-size: 13px;
+color: #555;
+padding: 15px 30px;
+text-transform: uppercase;
+
+}
+.collumn3{
+	font-size: 13px;
+color: #555;
+padding: 15px 100px;
+text-transform: uppercase;
+}
+.collumn4{
+	font-size: 13px;
+color: #555;
+padding: 15px 30px;
+text-transform: uppercase;
+}
+.collumn5{
+	font-size: 13px;
+color: #555;
+padding: 15px 30px;
+text-transform: uppercase;
+}
+.collumn3.lala{
+	padding: 15px 35px;
+}
+.collumn4.haha{
+	margin-left: 70px;
+}
+.table-mid .btn-num-down{
+	cursor: pointer;
+	padding: 10px 10px;
+}
+.table-mid .btn-num-up{
+	cursor: pointer;
+	padding: 10px 10px;
+}
+.table-shopping{
+	height: 400px;
+}
+	
+
+footer{}

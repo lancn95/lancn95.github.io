@@ -1,0 +1,142 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+header{}
+main{
+	margin: 80px 0;
+}
+main .block-trai{}
+main .block-trai .block-img{
+	overflow: hidden;
+	width: 750px;
+}
+main .block-trai .block-img img{
+transform: scale(1);
+transition: 1.5s;
+box-sizing: border-box;
+width: 100%;
+}
+main .block-trai .block-img:hover img{
+	transform: scale(1.1);
+}
+main .side-menu{
+	position: relative;
+	padding-bottom: 20px;
+}
+main .side-menu input{
+	width: 100%;
+	border: 1px solid gray;
+	border-radius: 25px;
+	height: 50px;	
+	color: #333;
+
+}
+main .side-menu button{
+	position: absolute;
+	top: 15px;
+	right: 25px;
+	color: #999;
+    background: #fff;
+    border: none;
+    outline: none;
+}
+main .side-menu button:hover{
+	color: cadetblue;
+}
+main .catelogy{
+margin-bottom: 20px;
+}
+main .catelogy h4{
+	border-bottom: 1px solid #e6e6e6;
+	padding-bottom: 20px;
+	font-family: roboto;
+	font-size: 22px;
+	font-weight: 1.33333;
+}
+main .catelogy ul{}
+main .catelogy ul li{
+	list-style: none;
+	border-bottom: 1px solid #e6e6e6;
+	padding: 20px 0;
+}
+main .catelogy ul li a{
+	text-decoration: none;
+	color: #999;
+}
+main .catelogy ul li a:hover{
+	color: #007bff;
+}
+main .feature-products{}
+main .feature-products h3{
+	font-family: roboto;
+	font-size: 22px;
+	font-weight: 1.33333;
+}
+main .feature-products .boctinnho{
+	display: flex;
+	margin: 40px 0;
+}
+main .feature-products .anh-nho{
+	margin-right: 20px;
+}
+main .feature-products .mo-ta{
+	display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 8px;
+}
+main .feature-products .mo-ta a{
+	text-decoration: none;
+	font-size: 15px;
+	color: #999;
+}
+main .feature-products .mo-ta a:hover{
+	color: #007bff;
+}
+main .feature-products .mo-ta span{
+	padding-top: 20px;
+} 
+
+main .achive{
+	margin-bottom: 40px;
+}
+main .achive h4{
+	font-family: roboto;
+	font-size: 22px;
+	font-weight: 1.33333;
+	margin-bottom: 20px;
+}
+main .achive ul{}
+main .achive ul li{
+	list-style: none;
+	padding-top: 10px;
+
+}
+main .achive ul li a{
+	text-decoration: none;
+	display: flex;
+	justify-content: space-between;
+	color: #999;
+	font-size: 15px;
+}
+main .achive ul li a:hover{
+	color: #007bff;
+}
+main .tags{}
+main .tags h4{
+	padding-bottom: 30px;
+
+}
+main .tags a{
+	color: #999;
+	text-decoration: none;
+	border: 1px solid #ccc;
+	border-radius: 15px;
+	padding: 0 15px;
+}
+main .tags a:hover{
+	color: #007bff;
+
+}
+footer{}

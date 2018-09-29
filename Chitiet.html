@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Register</title>
+	<title>Chi tiet san pham</title>
 	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/styledk.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="CSS/all.min.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/cloudzoom.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.css">
 </head>
 <body>
 	<header>
@@ -62,7 +64,9 @@
 				</div>
 			</div>
 		</div>
+		<!-- header-mid-area end -->
 	</header>
+	<!-- main-menu-start -->
 		<nav class="navbar navbar-inverse" role="navigation">
 			<div class="container">
 			
@@ -82,7 +86,7 @@
 						<ul class="nav navbar-nav">
 							<li class="active"><a href="index.html">Home</a></li>
 							<li><a href="About.html">About</a></li>
-							<li><a href="shop.html">Shop</a></li>
+							<li><a href="#">Product</a></li>
 							<li><a href="#">Service</a></li>
 							<li><a href="Blog.html">Blog</a></li>
 							<li><a href="contact.html">Contact</a></li>
@@ -102,40 +106,62 @@
 				</div>
 			</div>
 		</nav>
+	
+			<div class="croom" role="">
+         		<h4><a href="shift.html" title="">Zoom more</a></h4>
+					
+							<img  class="cloudzoom img-responsive" alt ="Cloud Zoom small image" id ="zoom1" src="img/2.jpg"
+					             title=""
+					             data-cloudzoom='
+					             zoomImage:"img/2.jpg",
+					             zoomSizeMode: "image",
+					             tintColor:"#000",
+					             tintOpacity:0.25,
+					             captionPosition:"bottom",
+					             maxMagnification:4,
+					             autoInside:550,
+					        '>
+					        <div class="clearfix"></div>
+					        <div class="product-thumb text-center">
+						        <a href="img/2.jpg" class="thumb-link">    
+						            <img class="cloudzoom-gallery" width="64" 
+						                 src="img/2.jpg"
+						                 title=""
+						                 alt ="Cloud Zoom thumb image"
+						                 data-cloudzoom='
+						                 useZoom:"#zoom1",
+						                 image:"img/2.jpg",
+						                 zoomImage:"img/2.jpg"
+						            '>
+						        </a>
 
-<!-- .......FORM Sign up......... -->
-<main>
-	<div class="container">
-		<form action="index.html">
-			<h3>Register</h3>
-			<label for="">Username</label>
-			<p>
-				<input type="text" id="username" class="username" placeholder=" Username" >
-			</p>
-			
-				<label for="">Password</label>
-			<p>	
-				<input type="password" class="password" id="password" placeholder=" Password" required="">
-			</p>
-			
-				<label for="">Email</label>
-			<p>
-				<input type="text" id="email" class="email" placeholder=" Email" required="">
-			</p>
-			
-				<label for="">Phone number</label>
-			<p>	
-				<input type="number" id="phone" class="phone" placeholder=" 037+" required="">
-			</p>
-			<p>
-				<button type="submit" id="btn">Register</button>
-				<button type="reset">Reset</button>
-			</p>
-		</form>
-	</div>
-</main>
-<footer>
-	<div class="footer-top-area">
+						        <a href="img/3.jpg" class="thumb-link">
+						            <img class="cloudzoom-gallery" width="64" 
+						                 src="img/3.jpg"
+						                 alt ="Cloud Zoom thumb image"
+						                 title=""
+						                 data-cloudzoom='
+						                 useZoom:"#zoom1",
+						                 image:"img/3.jpg",
+						                 zoomImage:"img/3.jpg"
+						            '>
+						        </a>
+
+						        <a href="img/4.jpg" class="thumb-link">
+						            <img class="cloudzoom-gallery"  width="64" 
+						                src="img/4.jpg"
+						                 alt ="Cloud Zoom thumb image"
+						                 title=""
+						                 data-cloudzoom='
+						                 useZoom:"#zoom1",
+						                 image:"img/4.jpg"
+						            '>
+						        </a>
+						     </div>
+							
+					</div>
+					<footer class="footer-area">
+		<div class="footer-top-area">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-3">
@@ -240,16 +266,27 @@
 					</div>
 				</div>
 			</div>
-		</div>
-	
-</footer>
-
-
-
-	
-	<script src="js/javascript.js" type="text/javascript" charset="utf-8" async defer></script>
+		</div>				
+	</footer>
 	<script type="text/javascript" src="js/all.min.js"></script>
 	<script type="text/javascript" src="jquery.js"></script>
 	<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/cloudzoom.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+	<script type="text/javascript">
+	$(function(){
+	$('#zoom1').bind('click',function(){
+	    var cloudZoom = $(this).data('CloudZoom'); 
+	        cloudZoom.closeZoom();
+	        $.fancybox.open(cloudZoom.getGalleryList());
+	        return false;
+	    });
+	});
+	    
+	CloudZoom.quickStart(); // cz
+	JetZoom.quickStart();
+	StarZoom.quickStart();
+	     
+	</script>
 </body>
 </html>

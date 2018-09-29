@@ -1,0 +1,45 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+header{}
+main{}
+main .intro-left{}
+main .intro-left .form{}
+main .intro-left .form h4{
+	
+}
+main .intro-left .form .email-contact{
+	margin: 20px 0;
+}
+main .intro-left .form .email-contact input{
+	width: 350px;
+	height: 40px;
+    border-radius: 3px solid gray;
+}
+main .intro-left .form .ghichu{}
+main .intro-left .form textarea{
+	width: 350px;
+	border-radius: 3px;
+}
+main .form .gui-thu{
+	width: calc(100% - 205px);
+	text-align: center;
+	width: 200
+}
+main .form .gui-thu button{
+width: 350px;
+color: #fff;
+background: black;
+height: 40px;
+border-radius: 25px;
+border: 1px solid black;
+
+}
+main .form .gui-thu button:hover{
+	color: red;
+}
+main .map{
+	margin: 40px 0;
+}
+footer{}
