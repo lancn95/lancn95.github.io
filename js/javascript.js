@@ -34,7 +34,7 @@ var phone = document.getElementById('phone');
  		}
  	}
  	if (email.value =='') {
- 		alert("Bạn phải nhập password ");
+ 		alert("Bạn phải nhập Email");
  		email.focus();
  		return false;
  	}else{

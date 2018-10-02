@@ -316,6 +316,27 @@
 
 	<script type="text/javascript" src="js/all.min.js"></script>
 	<script type="text/javascript" src="jquery.js"></script>
+
+	<div class="back-top">
+	<span><i class="fas fa-arrow-up"></i></span>
+	</div>
+	<script type="text/javascript">
+	// su kien cuon trang
+	$(window).scroll(function(){
+		var top = $(window).scrollTop();
+		if (top >= 200) {
+			$('.back-top').css({right: '10px'});
+			}else{
+				$('.back-top').css({right: '-100px'});
+			}
+		
+	})
+
+	// su kien click back to top
+	$('.back-top').click(function(){
+		$('body,html').animate({scrollTop:0});
+	})
+</script>
 	<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 </body>
 </html>
