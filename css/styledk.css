@@ -21,6 +21,9 @@ main form label{
 	font-family: arial;
 	color: #fff;
 }
+main form .ghi-chu{
+	color: #fff;
+}
 main form input{
 	border: 1px solid grey;
 	border-radius: 25px;
